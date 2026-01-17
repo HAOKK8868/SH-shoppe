@@ -120,7 +120,7 @@ with col2:
 
             # 调用模型
             response = client.models.generate_content_stream(
-                model="gemini-2.0-flash-thinking-exp-1219",
+                model="gemini-1.5-pro",
                 contents=[
                     types.Content(
                         role="user",
@@ -162,3 +162,4 @@ with col2:
         except Exception as e:
             status_box.update(label="❌ 发生错误", state="error")
             st.error(f"运行出错: {str(e)}")
+
